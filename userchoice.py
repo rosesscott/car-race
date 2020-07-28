@@ -30,7 +30,26 @@ def carcheck (question, min, max):
 carcheck("Choose a car number... (1-12)? ", 1 , 12)
 
 
-
+def distancecheck (question, min, max):
+    #def = define
+    # intcheck is the name of my fucntion in python
+    # question - will be the question asked to the user
+    # low and high boundaries will be set up by the progarmmer
+    valid = False
+    while not valid:
+        try: #try to convet input to interger
+            race_distance = int(input(question))
+            if min<= race_distance<=max:
+                print('You chose race distance', race_distance)
+                # I am happy with the loop
+                break
+            else: #the number is out of bounds
+                print("Please enter a valid race distance\nsimp! \nBetween 5 and 15")
+                continue
+        except ValueError:
+            print("Please enter a valid race distance\n This must be a number, please try again")
+#run function - call
+distancecheck("Choose a race distance... (5-15)? ", 5 , 15)
 
 
 

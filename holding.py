@@ -7,7 +7,7 @@ else:
 
 
 #continue and ask how many rounds they would like to play
-race_distance = int(input ("Choose a race distance... (10-20)? "))
+race_distance = int(input ("Choose a race distance... ()? "))
 if 1<= amount_initial <=12:
     print("great!")
 else:

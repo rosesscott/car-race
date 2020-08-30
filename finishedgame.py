@@ -1,4 +1,5 @@
 # create an introduction and ask what car number the user would like to choose.
+import random
 
 print("Welcome to my car game! :)")
 print("_______________________")
@@ -107,7 +108,7 @@ start_question("Would you like to begin?")
 
 print("_______________________")
 
-import random
+
 
 cars = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
